@@ -11,13 +11,16 @@ This is a classic CRUD application, backed by a JDBC database. It demonstrates:
 
 Twitter Bootstrap requires a different form layout to the default one that the Play form helper generates, so this application also provides an example of integrating a custom form input constructor.
 
-This application although was originally a sample Play2 Framework sample java app, has been modified so that it can be deployed on local as well as on an OpenShift DIY gear.
+This application although was originally a Play2 Framework sample java app, has been modified so that it can be deployed on local as well as on an OpenShift DIY gear.
 Basic commands for building up the OpenShift app for this project :
+
+```bash
 
 rhc app create -a computerdb -t diy-0.1
 
 rhc add-cartridge -a computerdb -c postgresql-9.2
 
+```
 
 Thats it, the empty app is ready to be deployed, just use the openshift_deploy script in the root directory to deploy it to your OpenShift account.
 
